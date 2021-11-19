@@ -8,7 +8,7 @@ import javax.jms.MessageListener;
 import javax.jms.TextMessage;
 
 @MessageDriven(name = "GreetingQueueMDB", activationConfig = {
-        @ActivationConfigProperty(propertyName = "destinationLookup", propertyValue = "queue/GreetingQueue"),
+        @ActivationConfigProperty(propertyName = "destinationLookup", propertyValue = "GreetingQueue"),
         @ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Queue"),
         @ActivationConfigProperty(propertyName = "acknowledgeMode", propertyValue = "Auto-acknowledge")})
 public class MessageBean implements MessageListener {
